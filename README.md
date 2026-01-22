@@ -1,6 +1,8 @@
 # Plataforma de Servicios de Streaming
 
 Proyecto académico frontend desarrollado con HTML, CSS y JavaScript.
+🔗Demo en vivo: https://imkevinl.github.io/Web/
+
 
 ## 🎯 Objetivo
 Aplicar lógica en JavaScript para la gestión de un carrito de compra y descuentos por combinación de servicios.
