@@ -1,7 +1,7 @@
 # Plataforma de Servicios de Streaming
 
 Proyecto académico frontend desarrollado con HTML, CSS y JavaScript.
-🔗Demo en vivo: https://imkevinl.github.io/Web/
+-🔗Demo en vivo: https://imkevinl.github.io/Web/
 
 
 ## 🎯 Objetivo
