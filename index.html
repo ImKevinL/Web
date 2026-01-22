@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entretenimiento en Familia - Tu Opción Digital</title>
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/906/906343.png" type="image/png">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logope.png" alt="Entretenimiento en familia Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="#planes">Combos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO con carrusel de fondo -->
+  <section class="hero">
+    <!-- Slides de fondo -->
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image:url('img/me.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/coj.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/impo.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/ls.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/tp.jpg')"></div>
+    </div>
+
+    <!-- Capa de color/gradiente para legibilidad -->
+    <div class="hero-overlay"></div>
+
+    <!-- Contenido encima -->
+    <div class="container hero-content">
+      <h2>Elige, conecta y disfruta</h2>
+      <p>Descubre el mejor contenido streaming adaptado para todas las edades. Películas, series, documentales y mucho más en un solo lugar.</p>
+      <a href="servicios.html" class="btn">Ver servicios</a>
+    </div>
+
+    <!-- Controles -->
+    <button class="hero-nav prev" aria-label="Anterior">❮</button>
+    <button class="hero-nav next" aria-label="Siguiente">❯</button>
+
+    <!-- Puntos -->
+    <div class="hero-dots">
+      <button class="active" aria-label="Ir al slide 1"></button>
+      <button aria-label="Ir al slide 2"></button>
+      <button aria-label="Ir al slide 3"></button>
+      <button aria-label="Ir al slide 4"></button>
+      <button aria-label="Ir al slide 5"></button>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section id="planes" class="planes">
+    <h2>Nuestros Combos</h2>
+    <div class="grid">
+      <div class="card precio">
+        <h3>Platino</h3>
+        <p>3 Plataformas</p>
+        <span class="precio">$30.000</span>
+        <button class="btn-comprar" data-combo="platino">Añadir</button>
+      </div>
+      <div class="card precio destacado">
+        <h3>Diamante</h3>
+        <p>4 Plataformas</p>
+        <span class="precio">$42.000</span>
+        <button class="btn-comprar" data-combo="diamante">Añadir</button>
+      </div>
+      <div class="card precio">
+        <h3>Deluxe</h3>
+        <p>5 Plataformas</p>
+        <span class="precio">$50.000</span>
+        <button class="btn-comprar" data-combo="deluxe">Añadir</button>
+      </div>
+      <div class="card precio">
+        <h3>Premium</h3>
+        <p>Todas las Plataformas</p>
+        <span class="precio">$60.000</span>
+        <button class="btn-comprar" data-combo="premium">Añadir</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form id="form-contacto">
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit" class="btn-principal">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Entretenimiento en Familia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="scrips.js"></script>
+</body>
+</html>

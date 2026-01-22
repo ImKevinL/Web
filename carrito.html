@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleccionar Plataformas - Entretenimiento en Familia</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logope.png" alt="Entretenimiento en familia Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="index.html#planes">Combos</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de Selección de Plataformas -->
+  <section class="seleccion-plataformas">
+    <div class="container">
+      <h2>Selecciona tus Plataformas</h2>
+      <p>Elige las plataformas que deseas incluir en tu combo</p>
+      
+      <!-- Resumen del Combo -->
+      <div class="combo-resumen">
+        <h3>Combo Seleccionado: <span id="combo-nombre">Platino</span></h3>
+        <p>Precio base: <span id="precio-base">$30.000</span></p>
+        <p>Plataformas incluidas: <span id="plataformas-incluidas">3</span></p>
+        
+        <!-- Selector de Combo -->
+        <div class="combo-selector">
+          <label for="combo-select">Cambiar combo:</label>
+          <select id="combo-select">
+            <option value="platino">Platino - 3 Plataformas ($30.000)</option>
+            <option value="diamante">Diamante - 4 Plataformas ($42.000)</option>
+            <option value="deluxe">Deluxe - 5 Plataformas ($50.000)</option>
+            <option value="premium">Premium - Todas las Plataformas ($60.000)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Lista de Plataformas Disponibles -->
+      <div class="plataformas-grid">
+        
+        <!-- Netflix -->
+        <div class="plataforma-card" data-precio="15000" data-nombre="Netflix">
+          <div class="plataforma-header">
+            <img src="img/netflix.png" alt="Netflix" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI0U1MDQwNCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TmV0ZmxpeDwvdGV4dD48L3N2Zz4='">
+            <h3>Netflix</h3>
+            <span class="precio">$15.000</span>
+          </div>
+          <p>Original Netflix 30 días</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+        <!-- Prime Video -->
+        <div class="plataforma-card" data-precio="12000" data-nombre="Prime Video">
+          <div class="plataforma-header">
+            <img src="img/prime.png" alt="Prime Video" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwQzZGRiIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UHJpbWU8L3RleHQ+PC9zdmc+'">
+            <h3>Prime Video</h3>
+            <span class="precio">$12.000</span>
+          </div>
+          <p>Prime Video Pantalla Original</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+        <!-- Max -->
+        <div class="plataforma-card" data-precio="12000" data-nombre="Max">
+          <div class="plataforma-header">
+            <img src="img/max.png" alt="Max" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwMDAwMCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+TWF4PC90ZXh0Pjwvc3ZnPg=='">
+            <h3>Max</h3>
+            <span class="precio">$12.000</span>
+          </div>
+          <p>Max Pantalla</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+        <!-- Disney+ -->
+        <div class="plataforma-card" data-precio="12000" data-nombre="Disney+">
+          <div class="plataforma-header">
+            <img src="img/disney.png" alt="Disney Plus" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwMDAwMCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RGlzbmV5KzwvdGV4dD48L3N2Zz4='">
+            <h3>Disney+</h3>
+            <span class="precio">$12.000</span>
+          </div>
+          <p>Disney+ Standard</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+        <!-- Disney+ Premium -->
+        <div class="plataforma-card" data-precio="15000" data-nombre="Disney+ Premium">
+          <div class="plataforma-header">
+            <img src="img/disney-premium.png" alt="Disney Plus Premium" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwMDAwMCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+RGlzbmV5KyBQcmVtaXVtPC90ZXh0Pjwvc3ZnPg=='">
+            <h3>Disney+ Premium</h3>
+            <span class="precio">$15.000</span>
+          </div>
+          <p>Disney+ Premium</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+        <!-- Crunchyroll -->
+        <div class="plataforma-card" data-precio="12000" data-nombre="Crunchyroll">
+          <div class="plataforma-header">
+            <img src="img/crunchyroll.png" alt="Crunchyroll" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI0ZGNzAwMCIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+Q3J1bmNoeXJvbGw8L3RleHQ+PC9zdmc+'">
+            <h3>Crunchyroll</h3>
+            <span class="precio">$12.000</span>
+          </div>
+          <p>Crunchyroll</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+        <!-- ViX -->
+        <div class="plataforma-card" data-precio="12000" data-nombre="ViX">
+          <div class="plataforma-header">
+            <img src="img/vix.png" alt="ViX" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwQzZGRiIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VmlYPC90ZXh0Pjwvc3ZnPg=='">
+            <h3>ViX</h3>
+            <span class="precio">$12.000</span>
+          </div>
+          <p>ViX</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+        <!-- Paramount+ -->
+        <div class="plataforma-card" data-precio="12000" data-nombre="Paramount+">
+          <div class="plataforma-header">
+            <img src="img/paramount.png" alt="Paramount Plus" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzAwNkZGRiIvPjx0ZXh0IHg9IjUwIiB5PSI1NSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEwIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+UGFyYW1vdW50KzwvdGV4dD48L3N2Zz4='">
+            <h3>Paramount+</h3>
+            <span class="precio">$12.000</span>
+          </div>
+          <p>Paramount+</p>
+          <button class="btn-plataforma" data-accion="toggle">
+            <span class="btn-texto">Añadir</span>
+            <span class="btn-icono">+</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Resumen del Carrito -->
+      <div class="carrito-resumen">
+        <h3>Resumen de tu Selección</h3>
+        <div class="carrito-lista" id="carrito-lista">
+          <p class="carrito-vacio">No hay plataformas seleccionadas</p>
+        </div>
+        <div class="carrito-total">
+          <p>Total: <span id="total-precio">$0</span></p>
+          <button class="btn-finalizar" id="btn-finalizar" disabled>
+            Finalizar Compra
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Entretenimiento en Familia - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="scrips.js"></script>
+</body>
+</html>
